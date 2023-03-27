@@ -8,7 +8,7 @@ services:
       dockerfile: ../../06-building-container-images/client-react/Dockerfile.3
     init: true
     volumes:
-      - client-react/vite.config.js:/usr/src/app/vite.config.js
+      - ../05-example-web-application/client-react/vite.config.js:/usr/src/app/vite.config.js
     networks:
       - frontend
     ports:
